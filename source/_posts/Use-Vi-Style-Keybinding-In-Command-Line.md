@@ -7,8 +7,6 @@ I've got used to Vi style editing mode for long, but there are always some cases
 
 To edit using the style of vi in command line (before entering Vim/Vi), I add the following content in ~/.bashrc file:
 
-More Info: [StackExchange](https://unix.stackexchange.com/questions/4870/is-it-possible-to-have-vim-key-bindings-in-terminal)
-
 ```bash
 # set to commandline editing-mode setting
 $ set -o vi
@@ -17,3 +15,5 @@ $ set keymap vi
 ```
 
 After reopening a bash shell, we are now current in the insert mode of vim. We can type ESC to normal mode, and use "B" "I" "dd" and some easy command in vi, though some complex commands like "/" don's work hitherto.
+
+More Info: [StackExchange](https://unix.stackexchange.com/questions/4870/is-it-possible-to-have-vim-key-bindings-in-terminal)
