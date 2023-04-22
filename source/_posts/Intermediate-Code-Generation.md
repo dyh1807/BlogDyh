@@ -78,6 +78,55 @@ Method2(More efficiently):
 1. set hash function h
 2. calculate(h<op, l, r>) and search the correspond list.
 
+## Three-address code
+
+feature: one operand at most.
+
+Intermediate name may be introduced.
+
+Three address code consist of:  
+1. Address 地址，可以是：名字、常量、编译器生成的临时变量
+2. Instruction 
+
+三地址码可以有多种表示方式：
+
+### 四元式表示
+
+op, arg1, arg2, result
+
+### 三元式表示
+
+op, arg1, arg2
+
+用 x op y 的位置表示计算结果，而不是显式表示
+
+间接三元式：包含了一个指向三元式的指针的链表。
+
+静态单赋值(SAA): 对相同变量的不同次赋值操作，采用不同的下标。
+
+## 类型和声明
+
+类型的使用有两个重要的作用：类型检查 type checking、翻译时应用 translation application
+
+type checking: 程序运行时，检查程序行为，例如 boolean 运算 && 的 两个成员是否都是 boolean 类型。
+
+translation application: 例如，根据类型，编译器可以确定名字在运行时刻需要多大的空间。
+
+### 类型表达式
+
+type expression, 表示了 type 的 structure.
+
+可以是基本的(int, float...)，也可以是复合构造出来的(array, struct, ...)
+
+type expression can be expressed by DAG
+
+### 类型等价
+
+有3种“类型等价”：
+1. same basic type
+2. same constructed type
+3. one type is the name another type expression
+4. 
 ## Status
 
 to be continue...
