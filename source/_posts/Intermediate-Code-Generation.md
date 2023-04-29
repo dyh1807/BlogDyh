@@ -126,7 +126,19 @@ type expression can be expressed by DAG
 1. same basic type
 2. same constructed type
 3. one type is the name another type expression
-4. 
+
+### Declaration
+
+Namely the Declaration in programming language. Here we concentrate on: HOW TO GET DECLARATION?
+
+包括的工作有(by SDT)：
+
+1. 计算类型及其宽度
+2. 计算被声明变量的相对地址
+3. 处理记录中的字段名
+   
+
+
 ## Status
 
 to be continue...
