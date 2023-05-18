@@ -128,4 +128,6 @@ theme_config:
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ''
+  type: git
+  repo: 'https://github.com/dyh1807/BlogDyh'
+  branch: main
