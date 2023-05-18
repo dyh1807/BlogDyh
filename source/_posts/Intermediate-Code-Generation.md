@@ -19,7 +19,7 @@ This post will keep with every key item in Chapter 6: Intermediate-Code Generati
 
 The logical structure of a compiler:
 
-![插入图片功能还没有部署完毕](./Intermediate-Code-Generation/Screenshot%202023-04-20%20232133.png)
+![编译器工作逻辑](./Intermediate-Code-Generation/Screenshot%202023-04-20%20232133.png)
 
 > This is a test to insert figure in post as well.
 
