@@ -4,6 +4,8 @@ date: 2023-05-18 23:16:30
 tags:
 - Math
 - Linear Algebra
+categories:
+- Math
 ---
 
 > 记录一下比较有用的一些数学概念
