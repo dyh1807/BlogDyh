@@ -8,6 +8,8 @@ categories:
 - git
 ---
 
+记录一下Git中的常用而容易忘记的操作。
+
 ## Git Conflict
 多个分支同时改动一个文件后merge会引发git冲突。为了解决 git conflict, 一般总是可以通过固定的步骤按需选择需要的部分，然后commit完成冲突解决。
 
@@ -87,3 +89,55 @@ line: neigher b1 nor master!
 ![merge graph](git-OPs/merge-graph.png)
 
 至此完成了冲突的处理。
+
+## Git Commit 规范
+
+### commit message 格式
+
+如下：
+
+```txt
+<type>(<scope>): <subject>
+<BLANK LINE>
+<body>
+<BLANK LINE>
+<footer>
+```
+
+然后是各个部分内容。
+
+### type
+
+type为必填项，用于指定commit的类型，约定了feat、fix两个主要type.
+
+```txt
+# 主要type
+feat:     增加新功能
+fix:      修复bug
+
+# 特殊type
+docs:     只改动了文档相关的内容
+style:    不影响代码含义的改动，例如去掉空格、改变缩进、增删分号
+build:    构造工具的或者外部依赖的改动，例如webpack，npm
+refactor: 代码重构时使用
+revert:   执行git revert打印的message
+
+# 暂不使用type
+test:     添加测试或者修改现有测试
+perf:     提高性能的改动
+ci:       与CI（持续集成服务）有关的改动
+chore:    不修改src或者test的其余修改，例如构建过程或辅助工具的变动
+
+作者：芋道源码
+链接：https://zhuanlan.zhihu.com/p/100773495
+来源：知乎
+著作权归作者所有。商业转载请联系作者获得授权，非商业转载请注明出处。
+```
+
+### scope
+
+描述改动的范围
+
+## Others
+
+Todo...
