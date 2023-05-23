@@ -93,4 +93,6 @@ Plug 'https://github.com/tpope/vim-surround'
 call plug#end()
 ```
 
-现在可以比较方便地使用环绕了。
+现在可以比较方便地使用`surround`了。
+
+> 后来发现 vim 插件里其实已经继承了 vim-surround 插件，其实没必要专门用 neovim; neovim 集成 vscode 还有没法实时响应的不足，因此目前来看，还是不如直接使用 vim 插件。
