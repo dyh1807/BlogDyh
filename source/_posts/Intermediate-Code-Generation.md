@@ -2,9 +2,9 @@
 title: Intermediate-Code-Generation
 date: 2023-04-20 22:55:47
 tags: Compiler
-catagories:
-- Learning Notes
+categories:
 - Compiler
+- Learning Notes
 ---
 >  插入图片和Latex公式有待部署
 
