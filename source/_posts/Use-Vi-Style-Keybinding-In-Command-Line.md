@@ -1,7 +1,7 @@
 ---
 title: Use Vi Style Keybinding In Command Line
 date: 2023-04-19 01:53:08
-tags: Vim
+tags: vim
 ---
 I've got used to Vi style editing mode for long, but there are always some cases where it's not straightforward to config vim style editing. For instance, in the bash command line.
 
