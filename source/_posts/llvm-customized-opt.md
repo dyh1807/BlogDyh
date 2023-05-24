@@ -2,11 +2,11 @@
 title: llvm-customized-opt
 date: 2023-05-22 10:26:41
 tags:
-- compiler
+- Compiler
 - llvm
 categories:
-- compiler
-- optimization
+- Compiler
+- Optimization
 ---
 The optimization of a compiler takes the most code in a modern compiler. Here is a note for optimization, which is take with llvm.
 

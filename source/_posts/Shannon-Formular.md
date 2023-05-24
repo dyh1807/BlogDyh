@@ -2,7 +2,7 @@
 title: Shannon Formula
 date: 2023-04-22 21:48:14
 tags: 
-- Computer Network
+- Networks
 - Information Theory
 ---
 香农公式：
