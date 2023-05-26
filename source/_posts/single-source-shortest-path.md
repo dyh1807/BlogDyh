@@ -3,6 +3,8 @@ title: single-source-shortest-path
 date: 2023-05-23 13:29:07
 tags:
 - algorithm
+- Dijkstra Algorithm
+- Bellman-Ford Algorithm
 categories:
 - algorithm
 - sssp
