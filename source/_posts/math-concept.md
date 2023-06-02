@@ -6,6 +6,7 @@ tags:
 - Linear Algebra
 categories:
 - Math
+- Concept
 ---
 
 > 记录一下比较有用的一些数学概念
