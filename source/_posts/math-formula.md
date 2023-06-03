@@ -26,6 +26,8 @@ suppose x is a vector(column vector by default), using denominator layout:
 - $$ \frac{\partial u^T A v}{\partial x} = \frac{\partial u}{\partial x}A v + \frac{\partial v}{\partial x}A^T u$$
 - $$ \frac{\partial x^T A x}{\partial x} = (A + A ^ T) x$$
 - $$ \frac{\partial u ^ T v}{\partial x} = \frac{\partial u}{\partial x} v + \frac{\partial v}{\partial x} u$$
+> here, $\frac{\partial v}{\partial x}$ and $\frac{\partial u}{\partial x}$ are both matrix.  
+- To Be Continue...
 
 ### chain rule
 
