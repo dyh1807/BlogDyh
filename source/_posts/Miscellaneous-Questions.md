@@ -17,7 +17,7 @@ tags:
 
 一个进程和 core 的数量没有直接的关系。
 
-参考[Christopher F Clark's Answer](https://www.quora.com/What-is-the-relation-between-a-process-and-a-core-Is-there-a-difference-between-the-core-s-threads-and-process-s-threads)
+参考[Christopher F Clark&#39;s Answer](https://www.quora.com/What-is-the-relation-between-a-process-and-a-core-Is-there-a-difference-between-the-core-s-threads-and-process-s-threads)
 
 ## Q2 (AI)
 
@@ -48,6 +48,18 @@ ResNet 中的 shortcut 的目的、作用？(来源：AICS-design internship int
 ## A3
 
 todo
+
+## Q4 (AICS)
+
+AI框架设计中，静态图和动态图有什么差异？
+
+## A4
+
+|     | 静态图 | 动态图 |
+| --- | ----- | ------ |
+| 差异 | 需要先构建再运行 | 一边运行一边构建|
+| 优点 |在运行前可以对图结构进行优化，比如常数折叠、算子融合等，可以获得更快的前向运算速度 | 可以在搭建网络的时候看见变量的值，便于检查 |
+| 缺点 | 只有在计算图运行起来之后，才能看到变量的值，像TensorFlow1.x中的session.run那样。 | 前向运算不好优化，因为根本不知道下一步运算要算什么。|
 
 ## QX
 
