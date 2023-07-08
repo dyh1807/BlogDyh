@@ -17,7 +17,7 @@ tags:
 
 一个进程和 core 的数量没有直接的关系。一个进程可以具有多个线程，因此一个进程可以在单个CPU工作，也可以在多个CPU工作。对于多进程，如果有多个CPU，则可以每个CPU处理一个进程，达到进程的并发效果；如果只有一个CPU，若仍然需要多进程工作，则需要采用调度算法达到并行效果。
 
-参考[Christopher F Clark&#39;s Answer](https://www.quora.com/What-is-the-relation-between-a-process-and-a-core-Is-there-a-difference-between-the-core-s-threads-and-process-s-threads)
+参考:[Christopher F Clark&#39;s Answer](https://www.quora.com/What-is-the-relation-between-a-process-and-a-core-Is-there-a-difference-between-the-core-s-threads-and-process-s-threads)，[Furquan Uddin's Answer](https://qr.ae/pyg4QU)
 
 ## Q2 (AI)
 
