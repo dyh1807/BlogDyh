@@ -15,7 +15,7 @@ tags:
 
 从OS的角度看，一个CPU核心 core 执行一个 thread；实际上，一个 core 可能可以同时（物理上）执行多个 thread（这样的能力称为 Hyperthreading），但是从OS的视角看，这就是2个 core 在执行 2个 threads。
 
-一个进程和 core 的数量没有直接的关系。
+一个进程和 core 的数量没有直接的关系。一个进程可以具有多个线程，因此一个进程可以在单个CPU工作，也可以在多个CPU工作。对于多进程，如果有多个CPU，则可以每个CPU处理一个进程，达到进程的并发效果；如果只有一个CPU，若仍然需要多进程工作，则需要采用调度算法达到并行效果。
 
 参考[Christopher F Clark&#39;s Answer](https://www.quora.com/What-is-the-relation-between-a-process-and-a-core-Is-there-a-difference-between-the-core-s-threads-and-process-s-threads)
 
@@ -70,6 +70,16 @@ AI框架中的一个“算子”指的是什么？
 算子(Operator)指的是一种操作，可以视为一个从输入到输出的映射。卷积、池化等操作均可以被抽象为算子。
 
 算子可能有不同的实现，所谓“高性能算子”就是高性能的算子实现（C++实现、Python实现均不同，寒武纪BCL与BPL、NVIDIA的CUDA均提供算子实现的“智能编程语言”等级描述）。
+
+## Q6 (AI)
+
+Self-Attention中，注意力分数为什么要进行 softmax 操作？为什么要在 softmax 之前除以$d_k$?（$d_k$为 "dimension of k"）
+
+## A6
+
+做 softmax 好理解，就是将一系列系数 $(\alpha_1, \cdots, \alpha_n)$ 映射为 $[0,1]$ 之间，并且他们的和为1，这样就可以在之后表示“各个 value 在输出中的占比”。
+
+之所以除以 $\sqrt{d_k}$ ，从运算的角度看，是因为之后要做softmax，如果输入softmex的值太大，会导致反向求梯度时softmax层的梯度趋近于0（从而导致训练非常缓慢；而如果这个梯度无法在计算机中表示，就等于发生了下溢，梯度实际上变成了0，从而无法训练）；而之所以除的这个值是 $\sqrt{d_k}$ （而不是其它的值），论文中也没有做详细解释，只能认为这是一个经验值。
 
 ## QX
 
